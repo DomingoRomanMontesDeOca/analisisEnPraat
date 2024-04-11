@@ -36,7 +36,7 @@
 #	· Sound
 
 # A partir de estos tres objetos, crea una tabla que contiene 
-# 	· valores en duración de vocales marcadas
+# 	· valores en duración (ms) de vocales marcadas
 # 	· dB y Hz en puntos etiquetados
 # 	· un valor (repetido para todas las filas) de promedio de Hz
 #	· etiquetas en marcación ToBi en las dos últimas marcas
@@ -152,7 +152,7 @@ for i to intervalos_tier_2
 
 			fin = Get end time of interval: 2, i
 
-			dur = fin-ini
+			dur = (fin-ini)*1000
 
 			select tabla_diana
 
